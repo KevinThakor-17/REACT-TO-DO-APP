@@ -16,7 +16,7 @@ function Todo() {
 
   function removeActivity(i){
     const updatedListData = listData.filter((elem, id)=>{
-        return i!=id;
+        return i!==id;
     })
     setListData(updatedListData);
   }
@@ -34,7 +34,7 @@ function Todo() {
       </div>
       </div>
       {
-        listData != [] && listData.map((data,id)=>{
+        listData !== [] && listData.map((data,id)=>{
             return(
                 <div className="row d-flex justify-content-center flex-row mt-4">
                     <div className="col-sm-6 d-flex flex-row justify-content-between" key={id}>
